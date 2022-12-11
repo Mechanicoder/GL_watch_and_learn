@@ -1,0 +1,36 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>使用WebGL绘制一个点</title>
+    </head>
+
+    <body>
+
+        <br />
+        <b>Look At X </b><input id="LookAtX" type="number" step="0.1" value="0" />
+        <b>Look At Y </b><input id="LookAtY" type="number" step="0.1" value="0" />
+        <b>Look At Z </b><input id="LookAtZ" type="number" step="0.1" value="0" />
+        <br />
+        <b>Eye Center X</b><input id="EyeCenterX" type="number" step="0.1" value="5" />
+        <b>Eye Center Y</b><input id="EyeCenterY" type="number" step="0.1" value="5" />
+        <b>Eye Center Z</b><input id="EyeCenterZ" type="number" step="0.1" value="0.5" />
+        <br />
+        <b>Eye Up X</b><input id="EyeUpX" type="number" step="0.1" value="0" />
+        <b>Eye Up Y</b><input id="EyeUpY" type="number" step="0.1" value="0" />
+        <b>Eye Up Z</b><input id="EyeUpZ" type="number" step="0.1" value="1" />
+        <br />
+        <b>Message </b><input id="Message" type="text" maxlength="80" size="80" />
+        <br />
+        
+        <!--canvas标签创建一个宽高均为500像素，背景为蓝色的矩形画布-->
+        <canvas id="webgl" width="600" height="600" style="background-color: blue"></canvas>
+        <canvas id="2D" width="600" height="600" style="background-color: red"></canvas>
+
+        <script src="https://blog-static.cnblogs.com/files/w-wanglei/cuon-matrix.js"></script>
+        <script src="base_test.js"></script>
+        <script src="fbo.js"></script>
+    </body>
+
+    </html>
